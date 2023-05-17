@@ -10,5 +10,6 @@ data class Country(
     val currencies: Pair<String,Currency>,
     val continent: String,
     val capitalCoordinates: String,
-    val timeZones: List<String>
+    val timeZones: List<String>,
+    val mapUrl:String
 )

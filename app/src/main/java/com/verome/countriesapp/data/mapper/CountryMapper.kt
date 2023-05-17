@@ -16,7 +16,8 @@ fun CountryDto.toCountry(): Country {
         currencies = currencies?.entries?.toList()?.get(0)?.toPair() ?: Pair("", Currency("", "")),
         continent = continents?.get(0) ?: "No continent available",
         capitalCoordinates = capitalInfo?.latlng?.let { doubleToString(capitalInfo.latlng) } ?: "",
-        timeZones = timezones ?: listOf()
+        timeZones = timezones ?: listOf(),
+        mapUrl = maps?.googleMaps?:""
     )
 }
 

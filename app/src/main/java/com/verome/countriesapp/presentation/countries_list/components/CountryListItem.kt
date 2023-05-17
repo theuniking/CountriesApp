@@ -39,7 +39,6 @@ fun CountryListItem(
     country: Country,
     onItemClick: (Country) -> Unit
 ) {
-
     var expanded by remember { mutableStateOf(false) }
     Card(
         modifier = modifier
@@ -63,7 +62,8 @@ fun CountryListItem(
                 AsyncImage(
                     model = country.flagUrl,
                     contentDescription = null,
-                    modifier = Modifier
+                    modifier =
+                    Modifier
                         .width(82.dp)
                         .clip(RoundedCornerShape(8.dp))
                 )

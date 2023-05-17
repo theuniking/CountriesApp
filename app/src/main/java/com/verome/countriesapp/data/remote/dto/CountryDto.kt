@@ -12,7 +12,11 @@ data class CountryDto(
     val currencies: Map<String,Currency>?,
     val continents: List<String>?,
     val capitalInfo: CapitalInfo?,
-    val timezones: List<String>?
+    val timezones: List<String>?,
+    val maps: Maps?
+)
+data class Maps(
+    val googleMaps: String?
 )
 data class Name(
     val common: String,
