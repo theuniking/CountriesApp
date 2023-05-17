@@ -8,3 +8,5 @@ From Advanced I added:
 4. Organize code using clean architecture;
 5. Use DI (Koin, Dagger 2 etc);
 6. Make the expand/collapse feature for CountriesList animated, with no UI bugs;
+7. Use “skeleton loading” for all the elements while API requests are performed;
+8. Make the “Capital coordinates” latitude + longitude value on the CountryDetails screen tappable; on tap open the link obtained from the “maps → Google Maps”;
